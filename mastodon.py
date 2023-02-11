@@ -22,8 +22,8 @@ def get_main_text(text):
     return send_text[:-1]
 
 def post_status(text):
-    url = "https://defcon.social/api/v1/statuses"
-    headers = {"Authorization": f"Bearer {os.environ['token']}"}
+    url = f"https://{os.environ['m_site']}/api/v1/statuses"
+    headers = {"Authorization": f"Bearer {os.environ['m_token']}"}
     data = {"status": text}
     r = requests.post(url, data, headers=headers)
     return r.status_code
