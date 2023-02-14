@@ -1,8 +1,13 @@
 import mastodon
 import sys
 
+
 def main():
     mastodon.print_header()
+
+    mastodon.post_images("img2.jpg")
+    sys.exit(0)
+
     while True:
         text = input("> ")
         if mastodon.is_exit(text):
@@ -14,7 +19,6 @@ def main():
                 print("Success.")
             else:
                 print("Error.")
-
 
 
 if __name__ == "__main__":
