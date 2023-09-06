@@ -1,8 +1,8 @@
 import requests
 import os
 
-DOMAIN = os.environ["m_site"]
-TOKEN = os.environ["m_token"]
+DOMAIN = os.environ["DOMAIN"]
+TOKEN = os.environ["TOKEN"]
 HEADERS = {"Authorization": f"Bearer {TOKEN}"}
 
 
@@ -35,22 +35,3 @@ def post_status(text):
     data = {"status": text}
     r = requests.post(url, data, headers=HEADERS)
     return r.status_code
-
-
-def post_images(image_url):
-    endpoint = "/api/v2/media"
-    files = {
-        "file": (image_url, open(image_url, "rb"), "multipart/form-type")
-    }
-    url = f"https://{DOMAIN}{endpoint}"
-    res = requests.post(url, headers=HEADERS, files=files)
-    print(res.text)
-    res_json = res.json()
-    image_id = res_json["id"]
-
-    url = f"https://{DOMAIN}/api/v1/statuses"
-    data = {"media_ids[]": [image_id]}
-    print(url, data)
-    r = requests.post(url, data, headers=HEADERS)
-    print(r.status_code)
-

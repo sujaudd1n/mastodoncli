@@ -5,9 +5,6 @@ import sys
 def main():
     mastodon.print_header()
 
-    mastodon.post_images("img2.jpg")
-    sys.exit(0)
-
     while True:
         text = input("> ")
         if mastodon.is_exit(text):
