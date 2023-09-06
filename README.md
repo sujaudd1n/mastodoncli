@@ -1,5 +1,7 @@
 # MastodonCLI
 
+Post to Mastodon instance from the terminal.
+
 ## Setup
 
 ```console
@@ -34,6 +36,13 @@ Success.
 ```
 
 The text "hello from the terminal." will be posted on the Mastodon instance.
+
+To exit.
+
+```console
+> !exit
+```
+
 
 ## Get access token
 

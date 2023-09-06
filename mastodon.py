@@ -7,8 +7,8 @@ HEADERS = {"Authorization": f"Bearer {TOKEN}"}
 
 
 def print_header():
-    print("Mastodon")
-    print("--------")
+    print("   MastodonCLI")
+    print("-----------------")
 
 
 def is_exit(text):
