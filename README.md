@@ -2,6 +2,8 @@
 
 Post to Mastodon instance from the terminal.
 
+![demo image](assets/demo.png)
+
 ## Setup
 
 ```console
