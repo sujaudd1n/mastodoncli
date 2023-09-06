@@ -11,7 +11,7 @@ $export TOKEN=<token>
 \<token\> refers to **access token**.
 
 If you don't know your access token. Create one by following [these
-steps](#get-access-token)
+steps.](#get-access-token)
 
 
 
@@ -33,7 +33,7 @@ Wait...
 Success.
 ```
 
-The text *hello from the terminal.* will be posted on Mastodon instance.
+The text "hello from the terminal." will be posted on the Mastodon instance.
 
 ## Get access token
 
