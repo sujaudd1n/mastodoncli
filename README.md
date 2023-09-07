@@ -11,8 +11,8 @@ $export DOMAIN=<domain_name>
 $export TOKEN=<token>
 ```
 
-\<domain\_name\> refers to *instance name* such as **mastodon.social**   
-\<token\> refers to **access token**.
+`<domain_name>` refers to *instance name* such as `mastodon.social`  
+`<token>` refers to `access token`.
 
 If you don't know your access token. Create one by following [these
 steps.](#get-access-token)
@@ -24,8 +24,6 @@ steps.](#get-access-token)
 ```console
 $python3 main.py
 ```
-
-Notice the prompt ```>```
 
 ## Docs
 
